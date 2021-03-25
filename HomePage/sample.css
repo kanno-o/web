@@ -1,0 +1,395 @@
+p,h1,h2,h3,h4,h5,h6{
+	margin-top:0; 
+}
+
+img{
+	vertical-align: center;
+}
+
+body{
+	font-family: YuGothic,'Yu Gothic',sans-serif;
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-size: 16px;
+	line-height: 50ï¼…;
+}
+
+header{
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+	background-color:;
+}
+
+header img{
+	width: 100%;
+	height: 100%;
+}
+
+.logo{
+	float: left;
+	margin: 0px;
+	width: 230px;
+	height: 100px;
+}
+
+header > .tap{
+	float: right;
+	display: inline-block;
+	color: white;
+	background: radial-gradient(#7DE2FC ,#b0dcfa);
+	padding: 0.5em;
+	color: white;
+	border-radius: 0.5em;
+}
+
+.tap li{
+	float: left;
+	margin: 0 30px;
+	font-size: 20px;
+	list-style: none;
+}
+
+nav{
+	margin: 0;
+	float: left;
+	width: 100%;
+	height: 50px;
+	background-color: #b0dcfa;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+nav > .menu > div{
+	float: left;
+	width: 20%;
+	height:100%;
+	position: relative;
+    margin: 0px;
+	list-style: none;
+	padding: 0em;
+    background-image:
+	 linear-gradient(-90deg, #7DE2FC 50%, transparent 50%, transparent);
+	background-size: 10% 10%;
+}
+
+nav > .menu > div > a {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 50px;
+    color: #f0f8ff;
+    transition: background-color 0.2s ease;
+    text-transform: uppercase;
+}
+
+nav > .menu > div:hover > a {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+nav > .menu > div > div {
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    min-width: 200%;
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 10px;
+}
+
+nav > .menu > div:not(:first-of-type):not(:last-of-type) > div {
+    left: -50%;
+    border-radius: 0 0 3px 3px;
+}
+
+nav > .menu > div:first-of-type > div {
+    left: 0;
+    border-radius: 0 0 3px 0;
+}
+
+nav > .menu > div:last-of-type > div {
+    right: 0;
+    border-radius: 0 0 0 3px;
+}
+
+nav > .menu > div:hover > div {
+    display: block;
+}
+
+nav > .menu > div > div > a {
+    display: block;
+    float: left;
+    padding: 8px 10px;
+    width: 90%;
+    margin: 2%;
+    text-align: center;
+    background-color: #b0dcfa;
+    color: #fbfbfb;
+    border-radius: 2px;
+    transition: background-color 0.4s ease;
+}
+
+nav > .menu > div > div > a:hover {
+    background-color: #55acee;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    nav > .menu > div > div > a {
+        margin: 5px 0;
+        width: 100%;
+    }
+    nav > .menu > div > a > span {
+        display: none;
+    }
+}
+
+
+
+.front{
+	width: 1280px;
+	height: 300px;
+	margin: 50px auto 0;
+	background-image: url("./gazou/spring.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 180px 0 100px 0;
+	color: white;
+	text-align: center;
+}
+
+.conteiner{
+	width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.front h1{
+    opacity: 0.8;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.front h2{
+    opacity: 0.8;
+}
+
+.btn{
+	padding: 8px;
+	color: white;
+	display: inline-block;
+	opacity: 0.8;
+	border-radius: 5px;
+}
+
+.signup{
+	background-color: #239b76;
+}
+
+.facebook{
+	background-color: #3b5998;
+	margin: 10px;
+}
+
+.twitter{
+	background-color: #55acee;
+}
+
+.fab{
+	margin: 5px
+}
+
+.btn-wrapper p{
+    margin: 10px 0;
+}
+
+.re{
+	border: 3px red solid;
+	margin: 5px auto;
+	width:1280px; 
+	text-align: center;
+    background: #ff9fa6; 
+    padding: 0.5em;
+    color: white;
+    border-radius: 0.5em;
+}
+
+.op{
+	padding-top:10px;
+	height: ;
+	background-color: #7DE2FC;
+}
+
+.w{
+    margin: 0 40% 10px;
+    height: 52px;
+}
+
+.suraido{
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.contena{
+    width: 1000px;
+    height: 600px;
+    background-color: pink;
+    overflow: hidden;
+}
+
+.slideshow{
+	height: 600px;
+	padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+	position: relative;
+}
+
+.slideshow > li{
+	opacity: 0;
+	position: absolute;
+	transition: opacity 3s ease-in-out; 
+}
+
+.slideshow > li.showSlide{
+	opacity: 1;
+}
+
+.slideshow > li > img {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 600px){
+	.slideshow{
+		width: 100%; 
+	}
+}
+
+.waku{
+	height: 1550px;
+	padding-bottom: 10px;
+	background-color: ;
+	width: 1280px;
+	margin:0 auto;
+}
+
+
+.mozi h2{
+	margin-bottom: 0;
+	font-weight: normal;
+	color: #6cb4e4;
+	text-align: center;
+	padding: 0.25em;
+	border-top: solid 2px #6cb4e4;
+	border-bottom: solid 2px #6cb4e4;
+	background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+
+.point h2{
+	font-weight: normal;
+	color: #6cb4e4;
+	text-align: center;
+	padding: 0.25em;
+	border-top: solid 2px #6cb4e4;
+	border-bottom: solid 2px #6cb4e4;
+	background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+	margin: 10px 0;
+}
+
+.es{
+	height:502px;
+}
+
+.insta{
+	float:left;
+	margin:0 5% 0 15%;
+	height: 502px;
+	max-width: 960px;
+}
+
+.instani{
+	float:right;
+	margin:0 15% 0 5%;
+	height:502px;
+	
+}
+.news{
+}
+
+.gazou{
+    width: 100%;
+    height: 214px;
+    background-color: ;
+}
+
+.gazou-ni{
+	margin: 0 2.5% 0 5%;
+	float: left;
+	width: 42.5%;
+	height: 214px;
+	background-color: white;
+}
+
+.gazou-ni > img{
+	width: 50%;
+	height:100%;
+}
+
+.gazou-ni > p{
+	float:right;
+	width:50%;
+}
+
+.gazou-san{
+	margin: 0 5% 0 2.5%;
+	float: right;
+	width: 42.5%;
+	height: 100%;
+	background-color: white;
+}
+
+.gazou-san > img{
+    width:50%;
+    height:100%;
+}
+
+.gazou-san > p{
+	float:right;
+	width:50%;
+}
+
+
+.kutikomi{
+
+	height: 300px;
+    background-color: green;
+}
+
+.pq{
+	width: 450px;
+	height: 450px;
+	margin:0 auto;
+}
+
+.access{
+	background-color: #7DE2FC;
+}
+
+footer{
+	padding-top: 50px;
+	background-color: #2ED0E0;
+}
+
+footer img{
+	width: 300px;
+}
+
+footer p{
+	color: #b3aeb5;
+	font-size: 15px;
+}
